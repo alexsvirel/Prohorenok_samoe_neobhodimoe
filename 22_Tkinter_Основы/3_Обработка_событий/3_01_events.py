@@ -7,4 +7,11 @@
 - bind_class()
 - bind_all()
 Для "отвязки": unbind(); unbind_class(); unbind_all()
+
+Перехват событий:
+- grab_set()
+- grab_set_global()
+- grab_release()
+- grab_current()
+- grab_status()
 """
