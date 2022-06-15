@@ -4,6 +4,7 @@
 import tkinter
 import tkinter.ttk
 
+
 class Application(tkinter.ttk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
@@ -30,6 +31,7 @@ class Application(tkinter.ttk.Frame):
 
     def show_value(self):
         print(self.varValue.get())
+
 
 if __name__ == '__main__':
     root = tkinter.Tk()

@@ -5,13 +5,14 @@ import tkinter
 import tkinter.ttk
 import tkinter.messagebox
 
+
 class Application(tkinter.ttk.Frame):
     def __init__(self, master=None):
         super().__init__(master)
         self.pack()
         self.create_widgets()
         self.master.title("Test")
-        self.master.resizable(False, False)     # не изменять размеры окна
+        self.master.resizable(False, False)  # не изменять размеры окна
 
     def create_widgets(self):
         self.btnHello = tkinter.ttk.Button(self,
@@ -27,7 +28,7 @@ class Application(tkinter.ttk.Frame):
     def say_hello(self, evt):
         tkinter.messagebox.showinfo("Test", "Привет, пользователь!")
 
+
 root = tkinter.Tk()
 app = Application(master=root)
 root.mainloop()
-
